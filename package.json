@@ -1,5 +1,5 @@
 {
-  "name": "@webzlodimir/vue-bottom-sheet",
+  "name": "@jgui1129/vue-bottom-sheet",
   "version": "2.0.2",
   "private": false,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint:types": "vue-tsc"
   },
   "dependencies": {
+    "@squadette/hammerjs": "^2.1.0-pre3",
     "hammerjs": "^2.0.8"
   },
   "devDependencies": {

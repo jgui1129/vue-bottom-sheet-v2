@@ -47,7 +47,7 @@
 </template>
 
 <script setup lang="ts">
-import Hammer from "hammerjs";
+import Hammer from "@squadette/hammerjs";
 import { nextTick, onBeforeUnmount, ref } from "vue";
 
 export interface IProps {
@@ -140,12 +140,12 @@ const init = async () => {
         move(e, "pan");
       });
     }
-    hammer.content = new Hammer(bottomSheetCardContent.value, options);
-    if (hammer.content) {
-      hammer.content.on("panstart panup pandown panend", (e: IEvent) => {
-        move(e, "content");
-      });
-    }
+    // hammer.content = new Hammer(bottomSheetCardContent.value, options);
+    // if (hammer.content) {
+    //   hammer.content.on("panstart panup pandown panend", (e: IEvent) => {
+    //     move(e, "content");
+    //   });
+    // }
     inited = true;
   }
 };
